@@ -37,7 +37,7 @@ export default () => {
   return (
     <>
       <Dialog open={open} setOpen={setOpen}>
-        <CreateFlightForm />
+        <CreateFlightForm columns={state.columns} />
       </Dialog>
       <MaterialTable
         title={"Flights Table"}

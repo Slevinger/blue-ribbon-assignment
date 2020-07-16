@@ -6,15 +6,28 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  dialogPaper: {
+    minHeight: "80vh",
+    maxHeight: "80vh"
+  }
+});
 
 export default ({ children, open, onConfirm, onCancel }) => {
+  const classes = useStyles();
   return (
-    <Dialog open={open} onClose={onCancel} aria-labelledby="form-dialog-title">
-      <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+    <Dialog
+      classes={classes.dialogPaper}
+      open={open}
+      onClose={onCancel}
+      aria-labelledby="form-dialog-title"
+    >
+      <DialogTitle id="form-dialog-title">New Flight</DialogTitle>
       <DialogContent>
-        <DialogContentText>
-          To subscribe to this website, please enter your email address here. We
-          will send updates occasionally.
+        <DialogContentText style={{ justifyContent: "space-between" }}>
+          Do you want to add a new Flight?
         </DialogContentText>
         {children}
       </DialogContent>

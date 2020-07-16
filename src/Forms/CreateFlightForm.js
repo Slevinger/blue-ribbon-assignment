@@ -8,16 +8,6 @@ import { useHistory } from "react-router-dom";
 
 // import NavLink from "../components/utils/NavLink";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexDirection: "column",
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      width: "25ch"
-    }
-  }
-}));
-
 const flightReducer = (state, { type, payload }) => {
   switch (type) {
     case "set_to":
@@ -41,9 +31,6 @@ const flightReducer = (state, { type, payload }) => {
 };
 
 export default () => {
-  const classes = useStyles();
-  const history = useHistory();
-
   const [state, dispach] = useReducer(flightReducer, {
     from: null,
     to: null,
@@ -78,15 +65,14 @@ export default () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "100vh",
         backgroundColor: "white"
       }}
     >
       <form
-        className={classes.root}
         style={{ flexDirection: "column", display: "flex" }}
         noValidate
         autoComplete="off"
+        handleSubmit={handleSubmit}
       >
         {Object.keys(state).map(key => {
           return (
