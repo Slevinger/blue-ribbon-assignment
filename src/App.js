@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+
+import MainRouter from "./screens/MainRouter";
+
+import { Provider as AuthProvider } from "./context/auth";
+import { Provider as FlightsProvider } from "./context/flights";
+
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import "./App.css";
 
-function App() {
-  return <div className="App">Blue Ribbon</div>;
+function App(props) {
+  return (
+    <AuthProvider>
+      <FlightsProvider>
+        <MainRouter />
+      </FlightsProvider>
+    </AuthProvider>
+  );
 }
 
 export default App;
