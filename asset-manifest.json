@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/blue-ribbon-assignment/static/css/main.5f361e03.chunk.css",
+    "main.js": "/blue-ribbon-assignment/static/js/main.2895031c.chunk.js",
+    "main.js.map": "/blue-ribbon-assignment/static/js/main.2895031c.chunk.js.map",
+    "runtime-main.js": "/blue-ribbon-assignment/static/js/runtime-main.70e85bec.js",
+    "runtime-main.js.map": "/blue-ribbon-assignment/static/js/runtime-main.70e85bec.js.map",
+    "static/js/2.ff05bbb0.chunk.js": "/blue-ribbon-assignment/static/js/2.ff05bbb0.chunk.js",
+    "static/js/2.ff05bbb0.chunk.js.map": "/blue-ribbon-assignment/static/js/2.ff05bbb0.chunk.js.map",
+    "index.html": "/blue-ribbon-assignment/index.html",
+    "precache-manifest.1df12a67a7906fefec70d8029ae23465.js": "/blue-ribbon-assignment/precache-manifest.1df12a67a7906fefec70d8029ae23465.js",
+    "service-worker.js": "/blue-ribbon-assignment/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/blue-ribbon-assignment/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ff05bbb0.chunk.js.LICENSE.txt": "/blue-ribbon-assignment/static/js/2.ff05bbb0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70e85bec.js",
+    "static/js/2.ff05bbb0.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.2895031c.chunk.js"
+  ]
+}

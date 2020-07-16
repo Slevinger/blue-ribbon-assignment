@@ -1,0 +1,2 @@
+(this["webpackJsonpblue-ribbon"]=this["webpackJsonpblue-ribbon"]||[]).push([[0],[,,,function(e,n,t){e.exports=t(10)},,,,,function(e,n,t){},function(e,n,t){},function(e,n,t){"use strict";t.r(n);var r=t(0),o=t.n(r),a=t(2),c=t.n(a);t(8),t(9);var u=function(){return o.a.createElement("div",{className:"App"},"Blue Ribbon")};c.a.render(o.a.createElement(o.a.StrictMode,null,o.a.createElement(u,null)),document.getElementById("root"))}],[[3,1,2]]]);
+//# sourceMappingURL=main.2895031c.chunk.js.map
